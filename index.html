@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Objects!!!</title>
+	<script type="text/javascript">
+        var student = new Object();
+        student.name = "Steven";
+        student.id = 10;
+        student.scoreMath = 100;
+        student.scoreEnglish = 80;
+        student.scoreEntrepreneurship = 95;
+        student.scoreAverage = function(){
+            return (student.scoreMath + student.scoreEnglish + student.scoreEntrepreneurship)/3;
+        };
+        student.displayDetails = function(){
+            document.write("Student Data" + "<br>");
+            document.write("----------------" + "<br>");
+            document.write("<br>");
+            document.write("Student Id: " + student.id + "<br>");
+            document.write("Name: " + student.name + "<br>");
+            document.write("Average Score: " + student.scoreAverage() + "<br>");
+        };
+        student.displayDetails();
+	</script>
+</head>
+<body>
+</body>
+</html>
